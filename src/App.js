@@ -30,7 +30,7 @@ class App extends Component {
     } else if (media_type === 'image') {
       return <img style={{width:'100%'}} alt="foo" src={hdurl} />
     } else {
-      return 'foo'
+      return 'no media'
     }
   }
 
