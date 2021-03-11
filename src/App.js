@@ -60,7 +60,7 @@ class App extends Component {
       
       <div className='container'>
       <div style={{display:'flex',flexDirection:'column',textAlign:'center',}}>
-          <h1 style={{fontWeight:'bold',fontSize:'3.1em',marginBottom:'0'}}>Picture Of The Day</h1>
+          <h1 style={{fontWeight:'bold',fontSize:'3.1em',marginBottom:'2'}}>Picture Of The Day</h1>
           <h2 style={{marginTop:'0'}}>Courtesy Of <span><img style={{width:'40px',verticalAlign:'bottom'}} src={Logo}/></span></h2>
       </div>
         
