@@ -1,0 +1,22 @@
+import React from 'react';
+
+const Explanation = (props) => {
+    return(
+        <div style={{background:'rebeccapurple',marginTop:'7px', padding:'20px',borderRadius:'5px'}}>
+            <p style={{lineHeight:'1.4',}}><span style={{fontSize:'1.3em',}}>Explanation: </span>{props.theText}
+                <span>
+                    <button style={
+                        {
+                            marginLeft: '5px',
+                            color:'orange',
+                            border: 'none',
+                            fontWeight: '600'}} 
+                            onClick={props.onClick}>{props.btnText}
+                    </button>
+                </span>
+            </p>
+        </div>
+    )
+}
+
+export default Explanation;
