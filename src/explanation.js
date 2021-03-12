@@ -7,9 +7,11 @@ const Explanation = (props) => {
                 <span>
                     <button style={
                         {
+                            borderRadius:'5px',
                             marginLeft: '5px',
                             color:'orange',
                             border: 'none',
+                            fontSize:'14px',
                             fontWeight: '600'}} 
                             onClick={props.onClick}>{props.btnText}
                     </button>
