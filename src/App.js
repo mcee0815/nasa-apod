@@ -69,7 +69,7 @@ class App extends Component {
         <div className="i-frame"><Media media={this.getMedia()} /></div>
         <Explanation 
           theText={this.state.more ? explanation && explanation.substr(0,160) : explanation}
-          btnText={this.state.more ? 'more' :'less'} 
+          btnText={this.state.more ? 'read more' :'less'} 
           onClick={this.readMoreToggle.bind(this)} />  
       </div>
     );
