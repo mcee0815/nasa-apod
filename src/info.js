@@ -1,5 +1,4 @@
-import React, {Component} from 'react';
-import { propTypes } from 'react-bootstrap/esm/Image';
+import React from 'react';
 
 const Info = (props) => {
     return(

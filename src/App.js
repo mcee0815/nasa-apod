@@ -55,13 +55,13 @@ class App extends Component {
   };
 
    render() {
-   const {explanation,hdurl,title,date} = this.state.myData;
+   const {explanation,title,date} = this.state.myData;
     return (
       
       <div className='container'>
       <div style={{display:'flex',flexDirection:'column',textAlign:'center',}}>
           <h1 style={{fontWeight:'bold',fontSize:'3.1em',marginBottom:'2'}}>Picture Of The Day</h1>
-          <h2 style={{marginTop:'0'}}>Courtesy Of <span><img style={{width:'40px',verticalAlign:'bottom'}} src={Logo}/></span></h2>
+          <h2 style={{marginTop:'0'}}>Courtesy Of <span><img style={{width:'40px',verticalAlign:'bottom'}} src={Logo} alt="logo"  /></span></h2>
       </div>
         
         
