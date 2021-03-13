@@ -13,7 +13,10 @@ class App extends Component {
     this.state = {
       myData:{},
       more:true,
+      theme:'dark',
+      typo:'dark'
     };
+    this.toggleTheme = this.toggleTheme.bind(this)
   }
   async componentDidMount() {
     let url = 'https://api.nasa.gov/planetary/apod?api_key=VfjVfU5gqOithCSrIJjz8a4xde96DzEpBp6WyKqv'
@@ -32,6 +35,14 @@ class App extends Component {
     } else {
       return 'no media'
     }
+  }
+  toggleTheme() {
+    let theme = this.state.theme === 'dark' ? 'light' : 'dark'
+    let typo = this.state.typo === 'dark' ? 'light' : 'dark'
+    this.setState({
+      theme:theme,
+      typo:typo
+    })
   }
 
   async getData(url) {
@@ -55,23 +66,25 @@ class App extends Component {
   };
 
    render() {
-   const {explanation,title,date} = this.state.myData;
+   const {explanation,title,date,} = this.state.myData;
     return (
-      
-      <div className='container'>
+      <div className={`${this.state.theme}-theme-bg`}>
+      <div className='container' >
+      <button onClick={this.toggleTheme}>Dark-Theme</button>
       <div style={{display:'flex',flexDirection:'column',textAlign:'center',}}>
-          <h1 style={{fontWeight:'bold',fontSize:'3.1em',marginBottom:'5px'}}>Picture Of The Day</h1>
+          <h1  style={{fontWeight:'bold',fontSize:'3.1em',marginBottom:'5px'}}>Picture Of The Day</h1>
           <h2 style={{marginTop:'0',}}>Courtesy Of <span><img style={{width:'40px',verticalAlign:'bottom'}} src={Logo} alt="logo"  /></span></h2>
       </div>
         
-        
-        <Info title={title} date={date} />
+        <Info  title={title} date={date} />
         <div className="i-frame"><Media media={this.getMedia()} /></div>
         <Explanation 
           theText={this.state.more ? explanation && explanation.substr(0,160) : explanation}
           btnText={this.state.more ? 'read more' :'less'} 
           onClick={this.readMoreToggle.bind(this)} />  
       </div>
+      </div>
+      
     );
   }
 }

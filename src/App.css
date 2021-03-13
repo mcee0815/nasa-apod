@@ -42,4 +42,22 @@
     height: 100%;
   }
 
+
+  .light-theme-bg, .light-theme-bg p,
+  .light-theme-bg h1,.light-theme-bg h2,
+  .light-theme-bg h4{
+    background: azure;
+    color: rebeccapurple;
+    /* padding: 7px; */
+}
+  .dark-theme-bg{
+    background: black;
+  }
+
+  .light-typo{
+    color:white;
+  }
+  .dark-typo{
+    color:rebeccapurple;
+  }
   
