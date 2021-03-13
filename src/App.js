@@ -31,7 +31,7 @@ class App extends Component {
     if (media_type === 'video') {
       return <iframe src={url} title='media' width="100%" height="450"></iframe>
     } else if (media_type === 'image') {
-      return <img style={{width:'100%'}} alt="foo" src={hdurl} />
+      return <img style={{width:'100%',borderRadius:'5px'}} alt="foo" src={hdurl} />
     } else {
       return 'no media'
     }
@@ -70,7 +70,7 @@ class App extends Component {
     return (
       <div className={`${this.state.theme}-theme-bg`}>
       <div className='container' >
-      <button onClick={this.toggleTheme}>Dark-Theme</button>
+      <button onClick={this.toggleTheme} style={{borderRadius:'5px',fontWeight:'bolder'}}>Light-Theme</button>
       <div style={{display:'flex',flexDirection:'column',textAlign:'center',}}>
           <h1  style={{fontWeight:'bold',fontSize:'3.1em',marginBottom:'5px'}}>Picture Of The Day</h1>
           <h2 style={{marginTop:'0',}}>Courtesy Of <span><img style={{width:'40px',verticalAlign:'bottom'}} src={Logo} alt="logo"  /></span></h2>

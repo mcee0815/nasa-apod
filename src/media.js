@@ -3,7 +3,7 @@ import React from 'react';
 
 const Media = ({media}) => {
     return (
-      <div style = {{textAlign:'center'}}>
+      <div style = {{textAlign:'center',}}>
        {media}
       </div>
     );
