@@ -69,22 +69,26 @@ class App extends Component {
    const {explanation,title,date,} = this.state.myData;
     return (
       <div className={`${this.state.theme}-theme-bg`}>
-      <div className='container' >
-      <button onClick={this.toggleTheme} style={{borderRadius:'5px',fontWeight:'bolder',background:'rebeccapurple',color:'white'}}>Light-Theme</button>
-      <div style={{display:'flex',flexDirection:'column',textAlign:'center',}}>
-          <h1  style={{fontWeight:'bold',fontSize:'3.1em',marginBottom:'5px'}}>Picture Of The Day</h1>
-          <h2 style={{marginTop:'0',}}>Courtesy Of <span><img style={{width:'40px',verticalAlign:'bottom'}} src={Logo} alt="logo"  /></span></h2>
+        <div className='container' >
+          <button onClick={this.toggleTheme} className='themeToggle' >Light-Theme</button>
+          
+          <div className='headings'>
+              <h1 className='topHeading'>Picture Of The Day</h1>
+              <h2 className='subHeading'>Courtesy Of 
+              <span>
+                <img className='logo' src={Logo} alt="logo"  />
+              </span>
+              </h2>
+          </div>
+          <Info  title={title} date={date} />
+          
+          <div className="i-frame"><Media media={this.getMedia()} /></div>
+            <Explanation 
+              theText={this.state.more ? explanation && explanation.substr(0,160) : explanation}
+              btnText={this.state.more ? 'read more' :'less'} 
+              onClick={this.readMoreToggle.bind(this)} />  
+        </div>
       </div>
-        
-        <Info  title={title} date={date} />
-        <div className="i-frame"><Media media={this.getMedia()} /></div>
-        <Explanation 
-          theText={this.state.more ? explanation && explanation.substr(0,160) : explanation}
-          btnText={this.state.more ? 'read more' :'less'} 
-          onClick={this.readMoreToggle.bind(this)} />  
-      </div>
-      </div>
-      
     );
   }
 }

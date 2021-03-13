@@ -48,7 +48,6 @@
   .light-theme-bg h4{
     background: azure;
     color: rebeccapurple;
-    /* padding: 7px; */
 }
   .dark-theme-bg{
     background: black;
@@ -60,4 +59,35 @@
   .dark-typo{
     color:rebeccapurple;
   }
+
+ /* theme toggle button */
+  .themeToggle{
+    border-radius:5px;
+    font-weight:bolder;
+    background:rebeccapurple;
+    color:white;
+}
+
+.logo{
+  width:40px;
+  vertical-align:bottom;
+  margin-left: 5px;
+}
+
+/*  headings */
+.headings{
+  display:flex;
+  flex-direction:column;
+  text-align:center;
+}
+.topHeading{
+  font-weight:bold;
+  font-size:3em;
+  margin-bottom:5px;
+}
+.subHeading{
+  margin-top: 0;
+}
+
+
   
