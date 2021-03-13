@@ -70,7 +70,7 @@ class App extends Component {
     return (
       <div className={`${this.state.theme}-theme-bg`}>
       <div className='container' >
-      <button onClick={this.toggleTheme} style={{borderRadius:'5px',fontWeight:'bolder'}}>Light-Theme</button>
+      <button onClick={this.toggleTheme} style={{borderRadius:'5px',fontWeight:'bolder',background:'rebecapurple',color:'white'}}>Light-Theme</button>
       <div style={{display:'flex',flexDirection:'column',textAlign:'center',}}>
           <h1  style={{fontWeight:'bold',fontSize:'3.1em',marginBottom:'5px'}}>Picture Of The Day</h1>
           <h2 style={{marginTop:'0',}}>Courtesy Of <span><img style={{width:'40px',verticalAlign:'bottom'}} src={Logo} alt="logo"  /></span></h2>
