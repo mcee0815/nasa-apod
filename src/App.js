@@ -4,6 +4,9 @@ import Logo from  './logo.png';
 import Info from  './info';
 import Explanation from  './explanation';
 import  Media  from './media';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLightbulb } from '@fortawesome/free-solid-svg-icons'
+
 
 
 class App extends Component {
@@ -70,8 +73,10 @@ class App extends Component {
     return (
       <div className={`${this.state.theme}-theme-bg`}>
         <div className='container' >
-          <button onClick={this.toggleTheme} className='themeToggle' >Light-Theme</button>
-          
+          <button onClick={this.toggleTheme} className='themeToggle' >
+            {<FontAwesomeIcon icon={faLightbulb} size='lg' />}
+          </button>
+  
           <div className='headings'>
               <h1 className='topHeading'>Picture Of The Day</h1>
               <h2 className='subHeading'>Courtesy Of 
@@ -85,7 +90,7 @@ class App extends Component {
           <div className="i-frame"><Media media={this.getMedia()} /></div>
             <Explanation 
               theText={this.state.more ? explanation && explanation.substr(0,160) : explanation}
-              btnText={this.state.more ? 'read more' :'less'} 
+              btnText={this.state.more ? '...read more' :'less'} 
               onClick={this.readMoreToggle.bind(this)} />  
         </div>
       </div>
