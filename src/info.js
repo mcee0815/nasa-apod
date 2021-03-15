@@ -2,9 +2,9 @@ import React from 'react';
 
 const Info = (props) => {
     return(
-        <div style={{lineHeight:'.5'}}>
+        <div style={{lineHeight:'.6'}}>
             <h4><span>Title:</span> {props.title}</h4>
-            <p><span>Date:</span> {props.date}</p>
+            <h4><span>Date:</span> {props.date}</h4>
             <br />
         </div>
     )
