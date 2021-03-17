@@ -1,10 +1,11 @@
 import React from 'react';
 
-const Info = (props) => {
+const Info = ({title,date}) => {
+    
     return(
-        <div style={{lineHeight:'.8'}}>
-            <h4><span>Title:</span> {props.title}</h4>
-            <h4><span>Date:</span> {props.date}</h4>
+        <div style={{lineHeight:'.3'}}>
+            <h4><span>Title:</span> {title}</h4>
+            <h4><span>Date:</span> {date}</h4>
             <br />
         </div>
     )

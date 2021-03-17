@@ -2,7 +2,7 @@ import React from 'react';
 
 const Explanation = (props) => {
     return(
-        <div style={{background:'rebeccapurple',marginTop:'7px', padding:'20px',borderRadius:'5px'}}>
+        <div style={{background:'rebeccapurple',marginTop:'7px',marginBottom:'15px', padding:'20px',borderRadius:'5px'}}>
         
         <p className={props.typo} style={{lineHeight:'1.4',padding:'5px'}}><span  style={{fontSize:'1.3em',}}>Explanation: </span>{props.theText}
         <span>
