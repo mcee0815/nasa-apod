@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import Logo from  './logo.png';
-import github from './GitHub_Logo.png'
 import GitHub from './GitHub-Mark.png'
 import Info from  './info';
 import Explanation from  './explanation';
