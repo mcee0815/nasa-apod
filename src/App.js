@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
 import Logo from  './logo.png';
+import github from './GitHub_Logo.png'
+import GitHub from './GitHub-Mark.png'
 import Info from  './info';
 import Explanation from  './explanation';
 import  Media  from './media';
-import  Social  from './social';
+import  Social2  from './social2';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLightbulb } from '@fortawesome/free-solid-svg-icons'
 
@@ -91,7 +93,12 @@ class App extends Component {
               theText={this.state.more ? explanation && explanation.substr(0,160) : explanation}
               btnText={this.state.more ? '...read more' :'less'} 
               onClick={this.readMoreToggle.bind(this)} /> 
-              <Social repo= "Github" url = "https://github.com/mcee0815/nasa-apod" /> 
+
+              <Social2 
+                repo="GitHub" 
+                url="https://github.com/mcee0815/nasa-apod"
+                img={GitHub}
+                 /> 
         </div>
       </div>
     );
