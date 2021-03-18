@@ -79,7 +79,7 @@ class App extends Component {
           </button>
   
           <div className='headings'>
-              <h1 className='topHeading'>Picture Of The Day</h1>
+              <h1 className='topHeading'>Picture Of The Day....</h1>
               <h2 className='subHeading'>Courtesy Of 
               <span>
                 <img className='logo' src={Logo} alt="logo"  />
