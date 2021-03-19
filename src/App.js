@@ -74,7 +74,7 @@ class App extends Component {
       <div className={`${this.state.theme}-theme-bg`}>
         <div className='container' >
           <button onClick={this.toggleTheme} className='themeToggle' >
-            {<FontAwesomeIcon icon={faLightbulb} size='lg' />}
+          {this.state.theme === 'dark' ? 'Light':'Dark'} {<FontAwesomeIcon icon={faLightbulb} size='lg' />}
           </button>
   
           <div className='headings'>
