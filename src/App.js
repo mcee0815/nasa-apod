@@ -93,11 +93,7 @@ class App extends Component {
               btnText={this.state.more ? '...read more' :'less'} 
               onClick={this.readMoreToggle.bind(this)} /> 
 
-              <Social2 
-                repo="GitHub" 
-                url="https://github.com/mcee0815/nasa-apod"
-                img={GitHub}
-                 /> 
+              
         </div>
       </div>
     );
