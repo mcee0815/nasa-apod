@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
 import Logo from  './logo.png';
-import GitHub from './GitHub-Mark.png'
+// import GitHub from './GitHub-Mark.png'
 import Info from  './info';
 import Explanation from  './explanation';
 import  Media  from './media';
-import  Social2  from './social2';
+// import  Social2  from './social2';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLightbulb } from '@fortawesome/free-solid-svg-icons'
 
